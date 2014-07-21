@@ -1,6 +1,8 @@
 apply plugin: 'java'
+apply plugin: 'application'
 
-sourceCompatibility = 1.5
+sourceCompatibility = 1.8
+mainClassName = 'com.hb.hellogradle.Main'
 version = '1.0'
 
 repositories {
@@ -9,4 +11,8 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.11'
 }
