@@ -17,8 +17,10 @@ Hello Gradle
     1. add application plugin to build file <code>apply plugin: 'application'</code>
     2. declare main class = <code>mainClassName = '$PACKAGE_NAME.$CLASS_NAME'</code>
     3. run program <code>gradle run</code>
-8. review changes with <code>git status</code>
-9. add a .gitignore file to prevent tracking of binaries and generated resources
-10. review changes with <code>git status</code> and verify only appropriate changes are tracked
-11. push to local repository <code>git commit -m "$COMMENT"</code>
-12. push to github <code>git push origin master </code>
+8. push changes to github
+    1. review changes with <code>git status</code>
+    2. add a .gitignore file to prevent tracking of binaries and generated resources
+    3. review changes with <code>git status</code> and verify only appropriate changes are tracked
+    4. add tracked sources <code>git add .</code>
+    5. push to local repository <code>git commit -m "$COMMENT"</code>
+    6. push to github <code>git push origin master </code>
